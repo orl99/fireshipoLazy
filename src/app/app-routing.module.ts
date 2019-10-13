@@ -7,7 +7,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'verificacion' , loadChildren: 'vereficacion.module#VereficacionModule'
+    path: 'verificacion' ,
+    loadChildren: './modules/verificacion.module#VereficacionModule',
+    // loadChildren : () => import('./modules/verificacion.module').then(m => m.VereficacionModule)
   },
 ];
 

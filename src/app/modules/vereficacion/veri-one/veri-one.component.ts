@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VeriOneComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    console.log('hellos')
+  }
 
   ngOnInit() {
   }

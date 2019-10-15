@@ -1,13 +1,16 @@
 <mat-toolbar>
-    <mat-toolbar-row>
-        <div class="row">
-            <div class="col-4">
+    <mat-toolbar class="d-flex flex-column">
+        <div class="row d-flex justify-content-around flex-column">
+            <div class="">
                 <span>FireShipoLazy</span>
             </div>
-            <div class="col-8">
+            <div class="">
                 <a [routerLink]="['verificacion']" routerLinkActive="router-link-active">Veri Module</a>
+            </div>
+            <div class="">
+                <a [routerLink]="['ngrx']" routerLinkActive="router-link-active">NgRx Module</a>
             </div>
         </div>
 
-    </mat-toolbar-row>
+    </mat-toolbar>
 </mat-toolbar>

@@ -6,6 +6,10 @@ const routes: Routes = [
     path: 'verificacion' ,
     loadChildren : () => import('./modules/vereficacion/vereficacion.module').then(m => m.VereficacionModule)
   },
+  {
+    path: 'ngrx' ,
+    loadChildren : () => import('./modules/ngrx-text/ngrx-text.module').then(m => m.NgrxTextModule)
+  },
 ];
 
 @NgModule({
